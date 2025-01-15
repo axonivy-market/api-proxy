@@ -6,4 +6,5 @@ services:
       - "8041:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./logs:/var/log/nginx/:rw
     restart: always
